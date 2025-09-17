@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+* {
+    font-family: 'Gaegu', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+/* .heading {
+    color: #3388bb;
+}
+p {
+    color: rgb(155, 0, 0);
+    font-size: 32px;
+}
+#paragraf {
+    color: green;
+}
+.paragraf {
+    color: salmon;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+#paragraf:hover {
+    font-weight: bold;
+} */
+/* h1 {
+    font-family: "Quicksand", sans-serif;
+} */
+/* .sans-serif {
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    color: #ff0000;
+}
+.serif {
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+    color: #00ff00;
+}
+.monospace {
+    font-family: "JetBrains Mono Nerd Font", monospace;
+    font-size: 16px;
+    color: #0000ff;
+} */
+p {
+    color: #3388bb;
+    line-height: 2rem;
+    /* font-weight: bold;
+    font-family: "Poppins"; */
+}
+.box-1 {
+    background-color: red;
+    margin-bottom: 16px;
+    border: 1px solid aquamarine;
+}
+.box-2 {
+    background-color: green;
+    margin-left: 16px;
+    border: 2px dashed blueviolet;
+    padding: 100px;
+}
+.box-3 {
+    background-color: blue;
+    margin-top: 16px;
+    border: 3px dotted yellow;
+}
+.div {
+    border: 4px dashed black;
+    padding: 16px;
+    width: 100px;
+    height: 100px;
+}
