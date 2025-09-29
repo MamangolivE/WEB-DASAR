@@ -6,8 +6,10 @@
         <nav class="navbar">
             <h1>HAHAHIHI Zoo</h1>
             <ul>
-                <li>Beranda</li>
-                <li>Fasilitas</li>                    
+                <li id="menu-beranda">Beranda</li>
+                <li id="menu-satwa">Daftar Satwa</li>
+                <li id="menu-fasilitas">Fasilitas</li>
+                <li id="btn-ketentuan">Lihat Ketentuan</li>                  
                 <li>Kritik dan Saran</li>
                 <li>Pesan Tiket</li>   
             </ul>
@@ -15,7 +17,7 @@
         <title>HAHAHIHI Zoo</title>
     </head>
     <body>
-        <h1 class="judul">SELAMAT DATANG DI WEBSITE HAHAHIHI ZOO</h2>
+        <h1 class="judul" id="beranda">SELAMAT DATANG DI WEBSITE HAHAHIHI ZOO</h2>
         <p class="info">
             Nikmati pengalaman seru menjelajahi dunia satwa bersama kami. Temui berbagai macam hewan dari seluruh
             penjuru dunia, mulai dari yang eksotis hingga yang langka. Dapatkan informasi menarik tentang habitat,
@@ -33,7 +35,7 @@
                 pengunjung dari segala usia. Bergabunglah dengan kami dalam misi melindungi keanekaragaman hayati dan
                 menikmati keindahan dunia satwa.
             </p>
-            <section class="satwa">
+            <section class="satwa" id="satwa">
                 <h3>Daftar Satwa</h2>
                 <ul class="list-satwa">
                     <button class="satwa-btn"> Zebra</button>
@@ -44,7 +46,27 @@
                     <button class="satwa-btn"> Harimau</button>
                 </ul>
             </section>
-            <div class="container-ketentuan">
+            <div id="fasilitas">
+                <h3 class="ketentuan">Fasilitas</h3>
+                <div class="fasilitas-list">
+                    <div class="fasilitas-item">
+                    <h4>Kantin</h4>
+                    <img src="kantin.jpg" alt="Kantin" class="img-fasilitas">
+                    <p>Tersedia makanan dan minuman segar.</p>
+                    </div>
+                    <div class="fasilitas-item">
+                    <h4>Area Bermain Anak</h4>
+                    <img src="area-bermain.jpg" alt="Area Bermain Anak" class="img-fasilitas">
+                    <p>Tempat bermain yang aman untuk anak-anak.</p>
+                    </div>
+                    <div class="fasilitas-item">
+                    <h4>Tempat Istirahat</h4>
+                    <img src="tempat-istirahat.jpg" alt="Tempat Istirahat" class="img-fasilitas">
+                    <p>Gazebo dan kursi taman untuk bersantai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-ketentuan" id="ketentuan">
                 <h3 class="ketentuan">Ketentuan</h3>
                 <div class="ketentuan-menu">
                     <div class="box">
@@ -74,5 +96,6 @@
             <p>referensi:<a href="https://surabayazoo.co.id/">https://surabayazoo.co.id/</a>
             </p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

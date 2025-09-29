@@ -1,65 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #FDEB9E ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #FDEB9E 0%, #FFF0CE 100%);
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .fasilitas-item,
+body.dark-mode .box {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
 }
 
 .navbar {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
   background-color: #2c3e50;
-  padding: 30px 30px;
+  padding: 24px 48px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.12);
 }
 
 .navbar h1 {
   color: #fff;
-  font-size: 24px;
-  margin: 0;
-  background-color: #2c3e50;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-  background-color: #2c3e50;
+  gap: 30px;
 }
 
 .navbar ul li {
   font-size: 18px;
-  margin-left: 50px;
   color: #ecf0f1;
   cursor: pointer;
-  transition: color 0.3s ease;
-  background-color: #2c3e50;
+  transition: color 0.3s, transform 0.3s;
+  padding: 8px 18px;
+  border-radius: 8px;
 }
 
 .navbar ul li:hover {
   color: #1abc9c;
+  background: rgba(255,255,255,0.08);
+  transform: scale(1.08);
 }
 
 .judul {
   text-align: center;
-  margin: 30px;
-  font-size: 30px;
+  margin: 40px 0 24px 0;
+  font-size: 36px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #fff8dc;
 }
 
 h3 {
-  margin: 70px 5px 5px 25px ;
+  margin: 70px 5px 5px 25px;
   font-size: 30px;
+  color: #2c3e50;
+  font-weight: 600;
 }
 
 .satwa {
-  margin: 60px 60px 60px 60px;
-  text-align: left;
+  margin: 60px;
   padding: 45px;
-  background-color: #fff8dc;
+  background: linear-gradient(120deg, #fff8dc 80%, #FFF0CE 100%);
   font-size: 24px;
-  margin-bottom: 10px;
-  border-radius: 75px;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+  margin-bottom: 24px;
 }
 
 .list-satwa {
@@ -67,114 +98,246 @@ h3 {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 20px;
-  background-color: #fff8dc;
+  background: none;
 }
 
 .satwa-btn {
   font-size: 20px;
-  padding: 10px;
-  border:hsl(from color h s l);
-  border-radius: 6px;
-  background-color: #FFF0CE;
+  padding: 12px 32px;
+  border: 2px solid #e0a800;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #FFF0CE 80%, #FDEB9E 100%);
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.12);
+  font-weight: 500;
 }
 
 .satwa-btn:hover {
-  background-color: #e0a800;
-  transform: scale(1.05);
-  color: white;
+  background: linear-gradient(90deg, #e0a800 80%, #fdf1d6 100%);
+  color: #fff;
+  transform: scale(1.07);
+  border-color: #1abc9c;
 }
 
 .info-hewan {
-  padding: 15px;
+  padding: 18px;
   background: #fdf1d6;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.10);
   font-size: 18px;
+  color: #2c3e50;
 }
 
 .satwa h3 {
   text-align: center;
-  margin: 0 0 50px 0;
-  background-color: #fff8dc;
+  margin: 0 0 32px 0;
+  color: #e0a800;
+  background: none;
 }
 
 .info {
-  margin: 20px 80px 100px 80px;
+  margin: 32px 80px 100px 80px;
   text-align: center;
   font-size: 22px;
-  text-shadow: 7px 7px 7px black;
+  text-shadow: 2px 2px 8px #fff8dc;
+  color: #2c3e50;
 }
 
 #desc_zoo {
   margin: 25px 0 0 25px;
-  width: 50%;
+  width: 60%;
   text-align: left;
   margin-bottom: 100px;
+  font-size: 20px;
+  color: #2c3e50;
 }
 
 .ketentuan{
-  padding: 20px 20px 20px 20px;
-  margin: 100px 600px 0 600px;
-  border-radius: 45px;
-  background-color: #fff8dc;
-  text-align: center; 
-  font-size: 35px;
+  padding: 32px;
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+  border-radius: 32px;
+  background: linear-gradient(120deg, #fff8dc 80%, #FFF0CE 100%);
+  text-align: center;
+  font-size: 32px;
+  color: #e0a800;
+  font-weight: bold;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
 }
 
 .ketentuan-menu {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 32px;
   flex-wrap: wrap;
-  margin: 60px 20px 20px 80px;
+  margin: 60px auto 20px auto;
   width: 90%;
   box-sizing: border-box;
 }
 
 .box {
-  background-color: #fff8dc;
-  border-radius: 10px;
-  padding: 45px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: linear-gradient(120deg, #fff8dc 80%, #FFF0CE 100%);
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10);
   flex: 1 1 250px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .box:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
 }
 
 .box li {
-  background-color: #fff8dc;
+  background: none;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 .box p {
-  background-color: #fff8dc;
+  background: none;
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 footer p{
   color: #fff;
-  margin: 150px 0 0 0;
+  margin: 120px 0 0 0;
   text-align: center;
-  padding: 30px;
-  background-color: #2c3e50;
+  padding: 32px;
+  background: #2c3e50;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 footer a {
-  color: #fff ;
-  margin-left: 0;
-  padding: 30px;
-  background-color: #2c3e50;
+  color: #fff;
+  padding: 0 8px;
+  background: none;
+  text-decoration: underline;
+  transition: color 0.3s;
 }
 
 footer a:hover {
   color: #1abc9c;
+}
+
+.fasilitas-h3 {
+  text-align: center;
+  margin: 0 0 32px 0;
+  color: #e0a800;
+  background: none;
+}
+
+.fasilitas-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.fasilitas-item {
+  background: linear-gradient(120deg, #fff8dc 80%, #FFF0CE 100%);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fasilitas-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+}
+
+.fasilitas-item h4 {
+  color: #e0a800;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.fasilitas-item p {
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+#beranda,
+#satwa,
+#fasilitas,
+#ketentuan {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px 12px;
+  }
+  .navbar ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .satwa, .ketentuan, .container-ketentuan, #desc_zoo, .info {
+    margin: 24px 8px;
+    padding: 18px;
+    font-size: 18px;
+  }
+  .fasilitas-list, .ketentuan-menu {
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    margin: 24px 0;
+  }
+  .fasilitas-item, .box {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .judul {
+    font-size: 24px;
+    margin: 24px 0 12px 0;
+  }
+  h3, .ketentuan {
+    font-size: 22px;
+    padding: 12px;
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .satwa-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  #desc_zoo {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  footer p {
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-satwa {
+    gap: 12px;
+  }
+  .satwa-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
